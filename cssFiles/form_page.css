@@ -1,0 +1,93 @@
+*{
+    font-family: "Rajdhani",sans-serif;
+    font-size:25px;
+}
+body{
+    background: radial-gradient(circle, rgba(129, 198, 232,1) 0%, rgba(93, 167, 219,1) 100%);
+    width:100vw;
+}
+#contact_form label.error{
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+}
+#contact_form label {
+    margin-bottom : 12px;
+    margin-left: 3%;
+}
+
+h1{
+    text-align: center;
+    font-size:50px;
+    color:#0D4C92;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+input{
+    padding:10px;
+    margin:10px;
+}
+label{
+    text-align: left;
+}
+#tabs{
+    max-width:80%;
+    margin: 0 auto;
+    height:auto;
+
+}
+ul{
+    background-color: #81C6E8;
+}
+#accordion{
+    max-width:100%;
+    height:auto;
+}
+#reset,#submit,#choose-file{
+    border:1px solid rgb(74,148,225);
+    padding:10px;
+    min-width:150px;
+    width:auto;
+    background-color: rgb(121,188,229);
+    color:white;
+    border-radius:10px;
+
+}
+#submitTest{
+    color:#5F9DF7;
+}
+#slide{
+    margin-bottom:20px;
+}
+::-webkit-file-upload-button {
+    background:#5F9DF7;
+    color: white;
+    border-radius:20px;
+    border-color: white;
+    padding: 1em;
+    margin-right:20px;
+}
+fieldset{
+    padding:10px;
+    margin:10px;
+    width:100%;
+}
+.output{
+    margin:20px auto;
+    min-height:100px;
+    border:5px solid white;
+    width:1200px;
+    border-radius:20px;
+    background:#5F9DF7;
+    color: white;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+}
+h4{
+    padding:10px;
+    font-size: 25px;
+    color:#81C6E8
+}

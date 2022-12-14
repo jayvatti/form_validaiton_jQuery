@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project - Custom Form Validation</title>
+    <link href="../cssFiles/form_page.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rajdhani">
+    <!-- CSS to define Theme colors -->
+    <link href="../Theme/jquery-ui.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="../validation/dist/jquery.validate.js"></script>
+    <!-- jQuery UI Library functionality -->
+    <script src="../Theme/jquery-ui.js"></script>
+
+    <script src="../jsFiles/form_validate.js"></script>
+
+</head>
+<body>
+<h1>Brush Artistry</h1>
+<div id="tabs">
+    <ul>
+        <li><a href="#tabs-1">Contact Us</a></li>
+        <li><a href="#tabs-2">Home</a></li>
+        <li><a href="#tabs-3">About</a></li>
+    </ul>
+    <div id="tabs-1">
+        <form id="contact_form">
+            <div id="accordion">
+                <h3>Your Information</h3>
+                <div>
+                    <label for="fname">*First Name: </label>
+                    <input type="text" name="fname" id="fname" placeholder="Type your First Name" autofocus required>
+                    <br/>
+                    <label for="lname">*Last Name: </label>
+                    <input type="text" name="lname" id="lname" placeholder="Type your Last Name" required>
+                    <br/>
+                    <label for="email">*Email: </label>
+                    <input type="email" name="email" id="email"placeholder="user@gmail.com" required>
+                    <br>
+                    <label for="username">*Username: </label>
+                    <input type="text" name="username" id="username" placeholder="Enter Your UserName" required>
+                    <br/>
+                    <label for="password">*Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password" required>
+                    <br/>
+                    <label for="telephone">*Telephone: </label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="(111) 111-1212" required>
+                </div>
+                <h3>Painting Description</h3>
+                <div>
+                    <label for="datepicker"></label>
+                    <p>*Delivery Date: <input type="text" readonly="readonly" id="datepicker" name="date" required placeholder="Delivery Date" ></p>
+                    <label for="tags">*Art Style: </label>
+                    <input id="tags" name="tags" placeholder="Pastel Colors"><br/>
+                    <br/>
+                    <label for="choose-file">*Choose an Image that you want us to Paint:</label><br/>
+                    <!-- ACCEPTS AN IMAGE -->
+                    <input type="file" accept="image/*" id="choose-file" name="choose_file" required><br/>
+                    <br/>
+                    <label for="text">Any specific instructions?</label>
+                    <br/>
+                    <textarea id="text" name="text" rows="7" cols="40" placeholder="What's on your mind?"></textarea>
+                    <br/>
+                    <div id="slide">
+                        <p>
+                            <label for="amount">*Level of Creative Freedom:</label>
+                            <input type="text" name="amount" id="amount" readonly style="border:0; color:#5F9DF7; font-weight:bold; width:40px; text-align: center;">
+                        </p>
+                        <div id="slider-range-max"></div>
+                    </div>
+                    <div class="widget">
+                        <fieldset class="controlgroup" id="addOns">
+                            <legend>Add Ons</legend>
+                            <label for="checkbox-1">Frames</label>
+                            <input type="checkbox" name="checkbox_1" id="checkbox-1" class="checkboxradio" value="frames">
+                            <label for="checkbox-2">Premium Border</label>
+                            <input type="checkbox" name="checkbox_1" id="checkbox-2" class="checkboxradio" value="border">
+                            <label for="checkbox-3">Matte Finish</label>
+                            <input type="checkbox" name="checkbox_1" id="checkbox-3" class="checkboxradio" value="finish">
+                            <label for="checkbox-4">Glass Covering</label>
+                            <input type="checkbox" name="checkbox_1" id="checkbox-4" class="checkboxradio" value="glass">
+                        </fieldset>
+                        <fieldset class="controlgroup" id="newsletter">
+                            <legend>*Sign up for NewsLetter? </legend>
+                            <label for="radio-1">Yes</label>
+                            <input type="radio" name="radio_1" id="radio-1" class="checkboxradio" value="yes" checked>
+                            <label for="radio-2">No</label>
+                            <input type="radio" name="radio_1" id="radio-2" class="checkboxradio" value="no">
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            <input id="reset" type="reset" value="Reset">
+            <input id="submit" type="submit" value="Submit">
+        </form>
+    </div>
+    <div id="tabs-2">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod, erat vitae fermentum tempor, leo magna egestas leo, ut ornare risus est pretium ante. Morbi iaculis ornare ante, ut tincidunt enim eleifend at. Mauris purus velit, commodo vitae massa sed, sagittis facilisis odio. Aliquam commodo felis nec consequat consequat. Fusce pharetra magna non mauris mattis, vitae vestibulum diam tempus. Nam scelerisque tincidunt augue sit amet lobortis. Maecenas tincidunt condimentum diam, non accumsan quam maximus sodales. Donec at finibus tellus, sed condimentum nibh. Nullam ornare ut mi vitae suscipit. Morbi varius eleifend tincidunt. Suspendisse euismod egestas maximus.
+            <br/><br/>
+            Duis facilisis, nunc quis efficitur interdum, risus metus blandit lorem, sit amet efficitur urna dui ut nisi. Integer ac condimentum tortor, sed efficitur sem. Fusce egestas, arcu tincidunt semper commodo, neque nisi sollicitudin turpis, sit amet commodo nulla mi a risus. In faucibus, nulla et facilisis rutrum, sem ipsum interdum mauris, sit amet ullamcorper risus leo ac nisi. Vestibulum viverra feugiat sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque efficitur maximus sapien. Pellentesque suscipit dolor velit, quis mattis dolor scelerisque at. Phasellus sodales pretium enim eget lobortis. Etiam rhoncus consectetur nisl, nec porta ante bibendum vel. Sed tristique orci ut tincidunt fermentum. Nunc ligula elit, aliquam sit amet rutrum eget, posuere id ante. Phasellus facilisis dignissim metus, eget vehicula ex varius ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lorem nec enim cursus iaculis eget et ligula. Nam iaculis, augue ut convallis laoreet, quam risus tempus urna, ac volutpat lorem dui a turpis.
+        </p>
+    </div>
+    <div id="tabs-3">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas euismod, erat vitae fermentum tempor, leo magna egestas leo, ut ornare risus est pretium ante. Morbi iaculis ornare ante, ut tincidunt enim eleifend at. Mauris purus velit, commodo vitae massa sed, sagittis facilisis odio. Aliquam commodo felis nec consequat consequat. Fusce pharetra magna non mauris mattis, vitae vestibulum diam tempus. Nam scelerisque tincidunt augue sit amet lobortis. Maecenas tincidunt condimentum diam, non accumsan quam maximus sodales. Donec at finibus tellus, sed condimentum nibh. Nullam ornare ut mi vitae suscipit. Morbi varius eleifend tincidunt. Suspendisse euismod egestas maximus.
+            <br/><br/>
+            Duis facilisis, nunc quis efficitur interdum, risus metus blandit lorem, sit amet efficitur urna dui ut nisi. Integer ac condimentum tortor, sed efficitur sem. Fusce egestas, arcu tincidunt semper commodo, neque nisi sollicitudin turpis, sit amet commodo nulla mi a risus. In faucibus, nulla et facilisis rutrum, sem ipsum interdum mauris, sit amet ullamcorper risus leo ac nisi. Vestibulum viverra feugiat sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque efficitur maximus sapien. Pellentesque suscipit dolor velit, quis mattis dolor scelerisque at. Phasellus sodales pretium enim eget lobortis. Etiam rhoncus consectetur nisl, nec porta ante bibendum vel. Sed tristique orci ut tincidunt fermentum. Nunc ligula elit, aliquam sit amet rutrum eget, posuere id ante. Phasellus facilisis dignissim metus, eget vehicula ex varius ac. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at lorem nec enim cursus iaculis eget et ligula. Nam iaculis, augue ut convallis laoreet, quam risus tempus urna, ac volutpat lorem dui a turpis.
+        </p>
+    </div>
+</div>
+<div class="output"><h2>Output</h2></div>
+</body>
+</html>
