@@ -121,7 +121,7 @@ $( document ).ready(function() {
             let slider = $('#amount').val();
 
             let addOns= "";//storing checkbox values
-            $('input[name="checkbox_1"]:checked').each(function() {		// List checked rocks
+            $('input[name="checkbox_1"]:checked').each(function() {
                 addOns += $(this).val() + " ";
             });
             let newsLetter = $('input[name="radio_1"]:checked').val()//radiobutton
